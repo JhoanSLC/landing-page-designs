@@ -4,23 +4,24 @@
     box-sizing: border-box;
     margin-left: 2rem;
     margin-right: 2rem;
+    border: none;
 }
 
 .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     margin-top: 2rem;
 }
 
 .header h1 {
     text-align: center;
-    font-size: 3.4rem;
+    font-size: 5rem;
 }
 
 .header p {
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
 
 button {
@@ -30,21 +31,67 @@ button {
     border-radius: 13px;
     color: #fff;
     background-color: #333333;
-    font-size: 10px;
+    font-size: 1.3rem;
     cursor: pointer;
 }
 
 .image {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items:center;
+    margin-top: 2rem;
+
+    background: url(/sources/sources_page_3/background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    
+}
+.image img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
-    overflow: hidden;
     object-fit: cover;
+    width: 87%;
+    height: 43rem;
 }
-.image img {
-    max-width: 100%;
-    max-height: 100%;
+
+@media screen and (max-width: 1050px) {
+    .header h1 {
+        font-size: 3rem;
+    }
+
+    .header p {
+        font-size: 1.2rem;
+    }
+    .header button {
+        font-size: 1rem;
+    }
+
+    .image img {
+        width: 90%;
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+    .header button {
+        font-size: 0.7rem;
+        padding: 7px 
+    }
+
+    .image img {
+        width: 90%;
+        height: 30rem;
+    }
 }
 
 
