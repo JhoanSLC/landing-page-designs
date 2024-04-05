@@ -5,8 +5,6 @@ body{
     
     
 }
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 
 * {
     padding: 0;
@@ -14,6 +12,9 @@ body{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 .container{
     width: 100%;
     max-width: 1920px;
@@ -25,6 +26,7 @@ body{
     background-size: cover;
     display: grid;
     grid-template-columns:  1fr 1fr ;
+    
 }
 
 .items{
@@ -39,13 +41,21 @@ body{
 }
 
 .items:nth-child(1) h1 {
-    font-size: 8rem;
-    margin: 0;
+    font-family: 'Poppins';
+    font-size: 7rem;
     white-space: nowrap;
     line-height: 1.3;
-    overflow: hidden;
+    padding: 10% 0 0 10%;
+}
+.items:nth-child(1) p {
+    font-family: 'Poppins';
+    font-size: 2.2rem;
+    white-space: nowrap;
+    line-height: 1.3;
+    padding: 3% 0 0 10%;
 }
 .items :nth-child(2){
+    margin: 0;
     right: 0;
     width: 50vw;
 }
@@ -54,10 +64,126 @@ body{
         background-size: 100% auto;
     }
 }
-@media (max-width:1080px){
-    .container{
-        max-width: auto;
-        min-height: auto;
-        background-size: cover;
+.items:nth-child(1) h1 {
+    font-size: 7rem; 
+    padding: 0;
+}
+
+.items:nth-child(1) p {
+    padding: 0;
+    font-size: 2.2rem; 
+}
+@media (max-width: 1920px) {
+    .container {
+        
+        background-size: 100% auto;
+    }
+    .items:nth-child(1) h1 {
+        padding: 10% 0 0 10%;
+        font-size: 7rem; 
+    }
+    .items:nth-child(1) p {
+        padding: 8% 0 0 10%;
+        font-size: 2.3rem; /* Tamaño relativo a 150px */
     }
 }
+
+@media only screen and (max-width: 1080px) and (max-height: 1080px) {
+    .container {
+        max-width: 100%;
+        max-height: 1080px; /* Establecer la altura máxima en 1080px */
+        background-size: cover;
+    }
+    .items:nth-child(1) h1 {
+        padding: 18% 0 0 5%;
+        font-size: 5rem; 
+    }
+    .items:nth-child(1) p {
+        padding: 37% 0 0 5%;
+        font-size: 1.1rem; 
+    }
+}
+@media only screen and (max-width: 430px) and (max-height: 932px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%; /* Reducir la altura al 90% */
+        background-size: cover;
+    }
+    .items:nth-child(1) h1 {
+        font-size: 2.8rem; /* Tamaño de fuente para el título */
+        padding: 55% 0 0 5%; /* Padding para el título */
+    }
+    .items:nth-child(1) p {
+        font-size: 0.78rem; /* Tamaño de fuente para el párrafo */
+        padding: 170% 0 0 5%; /* Padding para el párrafo */
+    }
+}
+@media only screen and (max-width: 412px) and (max-height: 915px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%; /* Reducir la altura al 90% */
+        background-size: cover;
+    }
+    .items:nth-child(1) h1 {
+        font-size: 2.8rem; /* Tamaño de fuente para el título */
+        padding: 55% 0 0 5%; /* Padding para el título */
+    }
+    .items:nth-child(1) p {
+        font-size: 0.75rem; /* Tamaño de fuente para el párrafo */
+        padding: 173% 0 0 5%; /* Padding para el párrafo */
+    }
+}
+@media only screen and (max-width: 414px) and (max-height: 896px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%; /* Reducir la altura al 90% */
+        background-size: cover;
+    }
+    .items:nth-child(1) h1 {
+        font-size: 2.7rem; /* Tamaño de fuente para el título */
+        padding: 60% 0 0 5%; /* Padding para el título */
+    }
+    .items:nth-child(1) p {
+        font-size: 0.75rem; /* Tamaño de fuente para el párrafo */
+        padding: 165% 0 0 5%; /* Padding para el párrafo */
+    }
+}
+@media only screen and (max-width: 390px) and (max-height: 844px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%; /* Reducir la altura al 90% */
+        background-size: cover;
+    }
+    .items:nth-child(1) h1 {
+        font-size: 2.55rem; /* Tamaño de fuente para el título */
+        padding: 52% 0 0 5%; /* Padding para el título */
+    }
+    .items:nth-child(1) p {
+        font-size: 0.71rem; /* Tamaño de fuente para el párrafo */
+        padding: 175% 0 0 5%; /* Padding para el párrafo */
+    }
+}
+
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%; /* Reducir la altura al 90% */
+        background-size: cover;
+    }
+    .items:nth-child(1) h1 {
+        font-size: 2.4rem; /* Tamaño de fuente para el título */
+        padding: 30% 0 0 5%; /* Padding para el título */
+    }
+    .items:nth-child(1) p {
+        font-size: 0.68rem; /* Tamaño de fuente para el párrafo */
+        padding: 142% 0 0 5%; /* Padding para el párrafo */
+    }
+}
+
+
+
