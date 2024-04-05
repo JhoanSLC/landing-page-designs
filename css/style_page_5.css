@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+.container {
+    height: 100vh;  
+}
+
+.header {
+    grid-area: title;
+}
+
+.gallery_layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.gallery_layout img {
+    width: 400px;
+    height: 345px;
+}
