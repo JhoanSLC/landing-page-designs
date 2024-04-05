@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 3rem;
+}
+
+.layout {
+    display: grid;
+    grid-template-areas: "left right"
+}
+
+.left-side {
+    grid-area: left;
+}
+
+.right-side {
+    grid-area: right;
+}
+
+.circle_text {
+
+    box-sizing:unset;
+
+    margin: auto auto;
+    p {
+        border-radius: 50%;
+        
+    }
+}
+
+
+
+
+
+.icon {
+    width: 2rem;
+}
