@@ -51,8 +51,10 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
     gap: 2%;
     object-fit: cover;
-    .image {
-        
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -85,7 +87,7 @@ body {
 
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
     .layout {
         display: flex;
         flex-direction: column;
@@ -120,6 +122,48 @@ body {
         .image-container {
             display: flex;
             justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .text-side {
+        .title {
+            font-size: 2rem;
+        }
+
+        .main-text {
+            font-size: 1rem;
+        }
+
+        .button {
+            margin-top: 1rem;
+            button {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .gallery {
+        object-fit: cover;
+        padding: 0;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 1.4rem;
+        gap: 2rem;
+        margin-top: 2rem;
+        
+        .image-container {
+            width: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+
+            img {
+                width: 6rem;
+            }
         }
     }
 }
