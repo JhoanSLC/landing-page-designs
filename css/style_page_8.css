@@ -68,55 +68,51 @@ body {
 
 }
 
-@media screen and (max-width: 1470px) and (min-width: 1366px) {
-    .layout {
-        h1 {
-            font-size: 5rem;
-            text-align: center;
-        
 
-        }
-        p {
-            text-align: center
-        }
-
-        button {
-            justify-self: center;
-            align-self: center;
-        }
-    }
-}
-
-@media screen and (max-width: 1366px) and (min-width: 770px) {
+@media screen and (max-width: 1467px) and (min-width: 770px) {
     .layout {
         display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+        
 
         .text {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            text-align: center;
+            justify-content: flex-start;
+            align-items: flex-start;
+            align-content: flex-start;
+            
 
             h1 {
                 margin-left: 0;
                 margin-right: 0;
-                width: 100%;
+                font-size: 3.5rem;
+                text-align: left;
+            }
+
+            p {
+                font-size: 1.6rem;
+                text-align: left;
+            }
+
+            button {
+                font-size: 1.5rem;
+                padding: 14px 3rem;
+                align-self: flex-start;
             }
         }
 
         .image {
-            margin-right: 0;
+            margin-right: 3rem;
             margin-left: 0;
             padding: 0;
-            text-align: center;
+            text-align: left;
             margin-top: 2rem;
+            width: 50%;
 
             img {
-                margin: 0 0 0 0;
+                margin: 0 0 0 5rem;
+                padding: 0 0 0 0;
             }
         }
         
