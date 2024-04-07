@@ -48,7 +48,7 @@
     display: flex;
     flex-direction: row;
     margin-left: 10vw;
-    height: 70vw;
+    height: 100vw;
     gap: 2rem;
     margin-top: 4vw;
     justify-content: center;
@@ -151,7 +151,7 @@
         }
     }
     .image-section {
-        height: 43rem;
+        height: 70vw;
         width: 100%;
         img {
             width: 18vw;
