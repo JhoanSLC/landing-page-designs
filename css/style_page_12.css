@@ -29,7 +29,7 @@
         overflow:visible;
 
         margin-top: 2vw;
-        font-size: 1.4vw;
+        font-size: 1.7vw;
     }
 
     .button {
@@ -47,15 +47,15 @@
 .image-section {
     display: flex;
     flex-direction: row;
-    margin-left: 10vw;
-    height: 100vw;
+    margin-left: 20vw;
+    min-height: 92vh;
     gap: 2rem;
     margin-top: 4vw;
-    justify-content: center;
-    width: 100vw;
+    justify-content: flex-end;
+    min-width: 70vw;
     img {
-        width: 100vw;
-        height: 20vw;
+        width: 20vw;
+        height: 25vw;
         border-radius: 40px;
     }
 
@@ -82,11 +82,11 @@
 
     .card {
         position: absolute;
-        top: 50rem; 
+        top: 33rem; 
         display: flex;
         flex-direction: row;
         align-items: center;
-        right: 13vw;
+        right: 5.5rem;
         gap: 1.5rem;
         height: 20rem;
 
@@ -102,8 +102,8 @@
 }
 
 .spiral {
-    bottom: 3vh;
-    left: 7vw;
+    top: 34vw;
+    left: 8vw;
 
     img {
         width: 11.5vw;
@@ -111,7 +111,7 @@
 }
 
 .wave {
-    left: 36vw;
+    left: 35vw;
     top: 2vw;
 
     img {
@@ -120,9 +120,9 @@
 }
 
 .dawn1 {
-    left: 38vw;
+    left: 45vw;
     z-index: 1;
-    bottom: 22vw;
+    bottom: 20rem;
 
     img {
         width: 15vw;
@@ -130,8 +130,8 @@
 }
 
 .dawn2 {
-    right: 10vw;
-    bottom: 9rem;
+    right: 6vw;
+    bottom: 14rem;
 
     img {
         width: 19vw;
@@ -139,7 +139,7 @@
 
 }
 
-@media screen and (max-width: 1366px) and (min-width: 900px) {
+@media screen and (max-width: 1366px) and (min-width: 1000px) {
 
     .header {
         .title {
@@ -151,8 +151,8 @@
         }
     }
     .image-section {
-        height: 70vw;
-        width: 100%;
+        min-height: 50vw;
+        min-width: 100vh;
         img {
             width: 18vw;
             height: 25vw;
@@ -160,30 +160,36 @@
 
         .card {
             top: 30rem;
-            right: 3vw;
+            right: 7rem;
         }
     }
     
     .spiral {
-        left: 14vw;
+        left: 8vw;
+        top: 35vw;
 
         img {
-            width: 13vw;
+            width: 10vw;
         }
     }
 
     .dawn1 {
-        left: 46.6vw;
+        left: 34.6rem;
+        top: 23vw;
+
+        img {
+            width: 14vw;
+        }
     }
 
     .dawn2 {
-        right: 5.5vw;
-        bottom: 12rem;
+        right: 10vw;
+        bottom: 15vw;
     }
-    
+
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
 
 
     .layout {
