@@ -12,18 +12,31 @@ body {
 }
 
 .layout {
-  margin: 25px;
-  display: grid;
+    margin: 25px;
+    display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
 }
 
 .lay-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+
+.left-right-images {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
   justify-content: center;
+}
+
+.left-right-images img {
+  width: 80%;
+}
+
+.middle-image {
+  width: 80%;
 }
 
 .left-section-text {
@@ -39,18 +52,6 @@ body {
   z-index: 1;
 }
 
-.left-right-images {
-  display: flex;
-  justify-content: center;
-}
-
-.left-right-images img {
-  width: 80%;
-}
-
-.middle-image {
-  width: 80%;
-}
 
 .button {
   text-align: center;
