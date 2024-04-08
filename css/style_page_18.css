@@ -85,6 +85,7 @@
     grid-template-rows: 1fr 1fr;
     justify-items: center;
     margin-top: 2rem;
+    grid-auto-columns: min-content;
 
     .item3 {
 
@@ -101,6 +102,7 @@
 
         img {
             width: 15vw;
+            height: 30vh;
         }
     }
     
@@ -143,16 +145,165 @@
             justify-self: end;
             height: fit-content;
             p {
-                margin-top: 2rem;
-                font-size: 2.4em;
+                font-size: 2vw;
                 font-style: italic;
                 
+            }
+
+            p:nth-of-type(3), p:nth-of-type(2) {
+                margin-top: 1rem;
             }
 
             hr {
                 height: 5px;
                 background-color: #2f2f2f;
-                margin-top: rem;
+                margin-top: 1rem;
             }
+        }
+    }
+
+    .item2 {
+        justify-self: end;
+        margin-right: 1vw;
+        img {
+            width: 16vw;
+        }
+    }
+
+    .item6 {
+        position: relative;
+        bottom: 8vh;
+        img {
+            width: 13vw;
+            height: 30vh;
+        }
+    }
+
+    .item7 {
+        position: relative;
+        bottom: 1.6vh;
+        img {
+            width: 16vw;
+            height: 28vh;
+        }
+    }
+
+    .item8 {
+        position: relative;
+        top: 3.4vh;
+        img {
+            width: 15vw;
+            height: 28vh;
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 768px) {
+    .layout {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-section {
+        display: flex;
+        flex-direction: column;
+
+        .main-text-container {
+            order: -1;
+
+            .title {
+                font-size: 7vw;
+            }
+
+            .main-text {
+                font-size: 4vw;
+            }
+
+            button {
+                font-size: 4vw;
+            }
+        }
+
+        .right-decoration, .left-decoration {
+            position: absolute;
+        }
+
+        .left-decoration {
+            left: 10vw;
+            top: 9vh;
+
+            .circle {
+                position: relative;
+                bottom: 3vh;
+            }
+        }
+
+        .right-decoration {
+            right: 10vw;
+
+            .circle {
+                position: relative;
+                top: 5vh;
+            }
+        }
+    }
+
+    .gallery-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
+        .item {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            img {
+                width: 35vw;
+            }
+        }
+
+        .item1 {
+            position: absolute;
+            top: 61vh;
+            left: 4vw;
+           .item-text p {
+                font-size: 3vw;
+           }
+        }
+
+        .item5 p, .item5 hr{
+            position: absolute;
+            top: 61vh;
+            margin-right: 2rem;
+            
+        
+        }
+
+        .item5 {
+            .item-text {
+                .card-text {
+                    font-size: 4vh;
+                }
+            }
+        }
+
+        .item5 {
+            position: unset;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item6 {
+            position: unset;
+        }
+        
     }
 }
