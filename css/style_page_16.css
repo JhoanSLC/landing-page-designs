@@ -44,6 +44,8 @@ body {
     height: fit-content;
     margin-top: 8rem;
     margin-left: 5rem;
+    webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 
     .title {
         font-size: 3vw;
@@ -56,6 +58,7 @@ body {
 
     .button {
         width: fit-content;
+        width: -moz-fit-content;
         margin-top: 3rem;
         
         button {
@@ -83,6 +86,8 @@ body {
     justify-content: space-between;
     color: #fff;
     padding: 50px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 
     .card {
         .card-title {
