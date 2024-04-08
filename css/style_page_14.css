@@ -228,6 +228,7 @@
     .layout {
         display: flex; 
         flex-direction: column;
+        min-width: 100vw;
     }
 
     .left-section {
@@ -235,12 +236,33 @@
         margin-left: 0;
         margin-top: 3rem;
         
+        .main-text {
+            font-size: 2vh;
+        }
         .footer {
             align-self: center;
             margin-top: 2rem;
-            width: 30rem;
+            width: 20rem;
             text-align: left;
+
+            .card {
+                .card-title {
+                    margin-top: 30rem;
+                }
+
+                hr {
+                    margin-top: 0;
+    
+
+                }
+
+                .card-text {
+                    margin-top: 0;
+                }
+            }
         }
+
+        
     }
 
     .right-section {
