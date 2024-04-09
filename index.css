@@ -27,11 +27,13 @@ body {
 .links-container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: auto;
     min-height: 8rem;
     min-width: 10rem;
     justify-items: center;
     margin-top: 5rem;
     gap: 20px;
+    
 
 
     a {
