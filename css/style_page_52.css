@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    width: calc(1080px/1080px*100vw);
+    height: calc(1920px/1920px*100vh);
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+.items{
+   
+    width: 100%;
+}
+.items:nth-child(1){
+    
+    left: 0;
+    width: 100%;
+}
+.items-item:nth-child(1){
+    width: 50%;
+    margin: 5% 0 0 8%;
+}
+.chica{
+    width: 100%;
+    height: auto;
+}
+.ilist{
+    display: flex;
+    list-style-type: none;
+}
+.items-item:nth-child(2){
+   
+    
+    width: 50%;
+    height: auto;
+}
+.escrit{
+    width: 100%;
+    height: 40%;
+    display:  flex;
+    gap: 2%;
+    
+    
+}
+.escritorio1{
+    margin: 0% 0 0 0;
+    width: 90%;
+    height: 100%;
+    border-radius: 10%;
+}
+.escritorio2{
+    margin: 10% 0 0 0;
+    width: 90%;
+    height: 90%;
+    border-radius: 12%;
+}
